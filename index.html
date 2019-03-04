@@ -11,14 +11,21 @@
 <body>    
     <div class="container">
         <h1>Convert Temperature</h1>
-        <form id = 'form'>Enter temperature to convert: <input type ="text" id = "temperature" placeholder="Enter Temperature" value="" >
+        <form id = 'form'>Temperature to convert: <input type ="number" id = "temperature" placeholder="Enter Temperature" value="" >
+            <label for="temp-type">Convert to:</label>
+            <select id="temp-type">                
+                <option class = "celsius" value="celsius">Celsius</option>
+                <option class = "farenheit" value="farenheit">Farhenheit</option>            
+            </select>
         </form>
-        <div class="results"></div>
-        <div class = "buttons">
-            <button class="celsius">Convert to Celsius</button>
-            <button class="farenheit">Convert to Farenheit</button>
-        </div>
+        
+         <div class = "buttons">            
+            <!-- <button class="celsius">Convert to Celsius</button>
+            <button class="farenheit">Convert to Farenheit</button> 
+            <button class="convert"> Convert </button>-->
+        </div> 
     </div>
+    <div class="results"></div>
     
     <script src="app.js"></script>
 </body>
